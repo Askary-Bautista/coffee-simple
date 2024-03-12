@@ -1,0 +1,236 @@
+body {
+    background-color: #111315;
+    margin: 0;
+    font: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.body-coffe-1 {
+    background-size: cover;
+    height: auto;
+    width: auto;
+    position: relative; /* Agregamos esta línea para que .body-coffe-2 se posicione relativo a .body-coffe-1 */
+}
+
+#img-background-coffe {
+    height: 300px;
+    width: auto;
+}
+
+.body-coffe-2 {
+    background-color: #1B1D1F;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(4fr);
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    margin-top: -140px; /* Utilizamos margen negativo en lugar de top */
+    gap: 10px;
+}
+
+
+/* Ajusta el espacio dentro de las cajas individuales */
+.coffe-section,
+.coffe-intro,
+.coffe-botons,
+.coffe-cards {
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+.coffe-section{
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    color: #FEF7EE;
+    padding: 20px; /* Ajusta según sea necesario */
+}
+
+.coffe-intro{
+    margin: 0 auto;
+    color:#6F757C;
+    text-align: center;
+    font-size: 16px;
+    width: 450px;
+    position: relative;
+    height: max-content;
+}
+
+.coffe-botons{
+    margin: 0 auto;
+    color:#6F757C;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    padding: 5px;
+}
+
+.buttons{
+    background-color: #1B1D1F;
+    padding: 8px;
+    border-radius: 160px 160px 160px 160px / 140px 140px 140px 140px;
+    border-style: none;
+    color: #FEF7EE;
+}
+
+.buttons:hover{
+    background-color: #6F757C;
+}
+/* Estilos de cards  */
+.coffe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribuir las tarjetas en filas automáticas con un ancho mínimo de 250px */
+    gap: 20px; /* Espacio entre las tarjetas */
+    border-radius: 10px;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    justify-items: center; /* Centrar las tarjetas horizontalmente */
+}
+
+@media screen and (max-width: 767px) {
+    .coffe-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cambiar el ancho mínimo a 150px para dispositivos pequeños */
+    }
+ 
+}
+
+
+.coffee-card {
+    display: grid;
+    grid-template-rows: max-content auto auto; /* Primera fila con altura mínima según su contenido, y las siguientes filas se ajustan automáticamente */
+    width: 100%;
+    gap: 10px;
+}
+.content-2{
+    display: grid;
+    grid-template-columns: 4fr 0.5fr ;
+    align-items: center;
+    line-height: normal;
+}
+.coffe-name{
+    color: #FEF7EE;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.coffe-price{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #BEE3CC;
+    color: #111315;
+    height: max-content;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.coffe-image{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.coffe-popular{
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 160px 160px 160px 160px / 140px 140px 140px 140px;
+    background-color: #F6C768;
+    height: max-content;
+    width: max-content;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+.coffe-votes{
+    color: #6F757C;
+    width: max-content;
+}
+
+.coffe-rating{
+    color: #FEF7EE;
+    width: max-content;
+    height: max-content;
+}
+.star-rating{
+    width: max-content;
+    height: max-content;
+}
+
+.coffe-available{
+    text-align: right;
+    color: #ED735D;
+}
+
+
+.content-1{
+    width: 100%;
+}
+
+.content-3{
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 1fr;
+    gap: 5px;
+    align-items: center;
+
+}
+
+/* Establece un tamaño de fuente base y ajusta el tamaño en los medios de consulta */
+body {
+    font-size: 16px;
+}
+
+/* Ajustes para dispositivos grandes */
+@media screen and (min-width: 1024px) {
+    .body-coffe-2 {
+        width: 70%;
+    }
+
+    .coffe-intro {
+        width: 500px;
+    }
+}
+
+/* Ajustes para dispositivos medianos */
+@media screen and (max-width: 1023px) {
+    .body-coffe-2 {
+        width: 80%;
+    }
+
+    .coffe-intro {
+        width: 400px;
+    }
+}
+
+/* Ajustes para dispositivos pequeños */
+@media screen and (max-width: 767px) {
+    .body-coffe-2 {
+        width: 90%;
+    }
+
+    .coffe-intro {
+        width: 300px;
+    }
+
+    .buttons {
+        padding: 10px; /* Reducir el padding de los botones */
+        font-size: 14px; /* Reducir el tamaño de fuente de los botones */
+    }
+
+    .coffe-popular {
+        padding: 3px 8px; /* Ajustar el padding de la etiqueta popular para dispositivos pequeños */
+        font-size: 10px; /* Reducir el tamaño de fuente de la etiqueta popular */
+    }
+}
