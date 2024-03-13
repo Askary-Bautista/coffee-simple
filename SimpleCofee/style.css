@@ -13,6 +13,8 @@ body {
     position: relative; /* Agregamos esta línea para que .body-coffe-2 se posicione relativo a .body-coffe-1 */
 }
 
+
+
 .body-coffe-2 {
     background-color: #1B1D1F;
     border-radius: 10px;
@@ -87,9 +89,13 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    body{
+        overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
     .coffe-cards {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cambiar el ancho mínimo a 150px para dispositivos pequeños */
     }
+
  
 }
 
@@ -190,6 +196,9 @@ body {
 
 /* Ajustes para dispositivos grandes */
 @media screen and (min-width: 1024px) {
+    body{
+        overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
     .body-coffe-2 {
         width: 70%;
     }
@@ -201,6 +210,9 @@ body {
 
 /* Ajustes para dispositivos medianos */
 @media screen and (max-width: 1023px) {
+    body{
+        overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
     .body-coffe-2 {
         width: 80%;
     }
@@ -212,6 +224,9 @@ body {
 
 /* Ajustes para dispositivos pequeños */
 @media screen and (max-width: 767px) {
+    body{
+        overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
     .body-coffe-2 {
         width: 90%;
     }
