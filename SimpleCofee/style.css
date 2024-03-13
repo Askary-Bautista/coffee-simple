@@ -3,6 +3,7 @@ body {
     margin: 0;
     font: 16px;
     font-family: "DM Sans", sans-serif;
+    overflow-x: hidden; /* Oculta el scroll horizontal */
 }
 
 .body-coffe-1 {
@@ -10,11 +11,6 @@ body {
     height: auto;
     width: auto;
     position: relative; /* Agregamos esta línea para que .body-coffe-2 se posicione relativo a .body-coffe-1 */
-}
-
-#img-background-coffe {
-    height: 300px;
-    width: auto;
 }
 
 .body-coffe-2 {
